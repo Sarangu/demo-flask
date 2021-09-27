@@ -9,6 +9,6 @@ class UserResource(BaseApplicationResource):
 
     @classmethod
     def get_by_template(cls, template):
-        res = d_service.find_by_template("aaaaF21", "users",
+        res = d_service.find_by_template("UserResource", "user",
                                        template, None)
         return res
